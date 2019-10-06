@@ -1,0 +1,61 @@
+.banner-two {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  align-items: center;
+  display: flex;
+  p {
+    font-weight: 100;
+  }
+  h1 {
+    font-weight: 400;
+  }
+}
+
+.project-banner {
+  height: 320px;
+  margin-bottom: 30px;
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.project-view-container {
+  h1, h2, h3, h4, p {
+    color: rgb(65, 65, 65);
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h2 {
+    margin-top: 32px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.project-view-charity {
+  display: inline-block;
+  float: right;
+  // width: 35;
+  background-color: white;
+  margin-top: -180px;
+  margin-left: 40px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px 0px;
+  border-radius: 8px;
+  text-align: center;
+  h4 {
+    font-weight: 100;
+    color: rgb(100, 100, 100);
+  }
+  p {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(100, 100, 100);
+    font-size: 0.8rem;
+  }
+}

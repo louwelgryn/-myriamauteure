@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
-  resources :books do
+  resources :books, only: [:show, :index] do
     resources :critics, only: [:create, :index]
     resources :reader_comments, only: [:create, :index]
   end
