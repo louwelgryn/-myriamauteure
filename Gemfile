@@ -17,6 +17,11 @@ gem 'webpacker'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.9.1'
 gem 'carrierwave', '~> 1.2'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'mail_form'
+gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
+gem 'turbolinks'
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'
@@ -28,5 +33,5 @@ group :development, :test do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'dotenv-rails'
+
 end

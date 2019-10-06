@@ -16,7 +16,7 @@ puts "creating La petite dernière"
 la_petite_derniere = Book.new
 la_petite_derniere.title = "La petite Dernière"
 la_petite_derniere.resume = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quod consectetur, repellat consequatur ullam nisi alias impedit eaque at natus soluta culpa, nulla temporibus doloribus, debitis est tempora dolor quaerat?"
-la_petite_derniere.image = "https://res.cloudinary.com/duro4nxuo/image/upload/v1570288157/Myriam%20Cohen%20Welgryn/et_tu_oseras_sortir_du_cadre_fivhr0.jpg"
+la_petite_derniere.image = "https://res.cloudinary.com/duro4nxuo/image/upload/v1570288204/Myriam%20Cohen%20Welgryn/la_petite_gimdha.jpg"
 la_petite_derniere.link = "https://www.amazon.fr/petite-derni%C3%A8re-Myriam-Cohen-Welgryn/dp/2869594356/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=la+petite+derniere+myriam+cohen+welgryn&qid=1570286374&s=books&sr=1-1"
 la_petite_derniere.tags = ["maternité","enfance" ]
 la_petite_derniere.year = 1999
