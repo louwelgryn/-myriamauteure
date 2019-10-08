@@ -30,3 +30,25 @@
   background-color: black;
   color: white;
 }
+
+.btn-suedois-rouge {
+      transition: all 0.3s;
+    font-size: 12px;
+    font-family: "europa", sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    padding: 12px 18px;
+    border: 2px solid #d85e43;
+    background: #d85e43;
+    display: inline-block;
+    text-align: center;
+    line-height: normal;
+    vertical-align: top;
+    color:white;
+}
+
+.btn-suedois-rouge:hover {
+  background-color: #d85e43;
+  color: white;
+  padding: 14px 20px;
+}

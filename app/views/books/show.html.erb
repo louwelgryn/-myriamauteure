@@ -2,10 +2,11 @@
 <div class="banner-two project-banner" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://res.cloudinary.com/duro4nxuo/image/upload/v1570291968/Myriam%20Cohen%20Welgryn/letters_mom_obemt1.jpg'); ">
   <div class="container">
     <div class="title-show">
-      <%= image_tag "myriamDef.jpg", class: "avatar-xxl" %>
+
       <div class="title-details">
         <h2><%= @book.title %> (<%= @book.year %>)</h2>
         <p><%= @book.edition_house %></p>
+        <a class="btn btn-suedois-rouge" href="<%= @book.link %>" target="_blank">COMMANDER</a>
       </div>
     </div>
   </div>
@@ -16,13 +17,18 @@
   <div class="project-view-charity">
    <div class="image"> <%= image_tag @book.image, height: 600, width: 350 %> </div>
   </div>
+
+
+
+<h6><%= @book.resume %> </h6>
+<br>
+<br>
+<% @book.tags.each do |tag| %>
+<h4>  <%= tag %> </h4>
+<% end %>
+
 </div>
 
-
-<%= @book.resume %>
-<%= @book.tags %>
-
-<a class="btn btn-suedois" href="<%= @book.link %>" target="_blank">COMMANDER</a>
 
 
 
