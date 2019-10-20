@@ -29,7 +29,12 @@
 
 .nav-padding {
 padding: 10px;
+margin-left: 1rem;
 
+}
+
+#nav-accueil{
+  margin-left: 4rem;
 }
 
 .nav-color {
@@ -40,10 +45,11 @@ padding: 10px;
   color: #222;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #d85e43;
+  color: #d1453c;
 }
 #nav-contact{
-  color: #d85e43;
+  color: #d1453c;
+  margin-right: 4rem;
 }
 
 

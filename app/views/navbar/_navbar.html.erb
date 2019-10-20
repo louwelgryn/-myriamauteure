@@ -1,6 +1,6 @@
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-lewagon">
-  <a class="navbar-brand nav-padding" href="/">ACCUEIL</a>
+  <a class="navbar-brand nav-padding" id="nav-accueil" href="/">ACCUEIL</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -10,18 +10,20 @@
         <a class="nav-link" href="#">BIO<span class="sr-only">(current)</span></a>
       </li>
        <li class="nav-item dropdown nav-padding">
-        <a class="nav-link dropdown-toggle red-square" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle red-square" href="#" id="navbarDropdownMenuLink" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           OEUVRES
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
           <% @books = Book.all %>
           <% @books.each do |book| %>
-          <%= link_to book.title, book_path(book),class:"dropdown-item"  %>
+         <a><%= link_to book.title, book_path(book),class:"dropdown-item"  %></a>
           <% end %>
+
         </div>
       </li>
       <li class="nav-item nav-padding">
-        <a class="nav-link hover " href="#">ACTU</a>
+        <a class="nav-link hover " href="/tweets">ACTU</a>
       </li>
       <li class="nav-item nav-padding">
         <a class="nav-color nav-link" id="nav-contact" href="/home">CONTACT</a>
