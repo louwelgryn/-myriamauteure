@@ -13,3 +13,5 @@ import "bootstrap";
 //     element.classList.add("shows");;
 //   })
 // }
+
+$('.dropdown-toggle').dropdown()

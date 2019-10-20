@@ -17,7 +17,7 @@
 
           <% @books = Book.all %>
           <% @books.each do |book| %>
-         <a><%= link_to book.title, book_path(book),class:"dropdown-item"  %></a>
+         <a ><%= link_to book.title, book_path(book),class:"dropdown-item"  %></a>
           <% end %>
 
         </div>
@@ -32,3 +32,6 @@
     </ul>
   </div>
 </nav>
+
+
+
