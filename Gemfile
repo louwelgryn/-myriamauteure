@@ -22,6 +22,10 @@ gem 'mail_form'
 gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
 gem 'turbolinks'
 gem 'tweetstream'
+gem  'libv8'
+gem 'execjs'
+
+
 
 
 

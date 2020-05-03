@@ -6,3 +6,90 @@ object-fit: cover
 .title-show {
   display: flex;
 }
+
+.book-details {
+	display: flex;
+	text-align: center;
+	margin-bottom:15px;
+}
+
+.title-details {
+	color: white;
+	margin: 20px;
+	justify-content: space-between
+}
+
+.flex {
+	display:flex;
+}
+
+.white-background {
+	background:rgba(255,255,255, 0.12);
+	margin-left: 40px;
+}
+
+.book {
+	flex:1;
+}
+
+.red {
+	color: #c30101;
+}
+
+.justify {
+	text-align: left;
+}
+
+.book-image{
+	position: center;
+	margin-top: 15px;
+}
+
+.white-letters {
+	color: white;
+}
+
+.opacity-container {
+	background:rgba(255,255,255, 0.3);
+}
+
+.book-title {
+    margin-right: 20px;
+}
+
+.tag {
+	color: transparent;
+	display: flex;
+}
+
+.black-background{
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+}
+
+.italique {
+	font-style: italic;
+}
+
+.link-red {
+	text-decoration:none;
+	color: white;
+}
+
+.link-red:hover {
+	text-decoration:none;
+	color: #c30101;
+}
+
+.extract {
+	padding: 20px;
+	position: relative;
+}
+
+.border-red {
+	border: solid #c30101;
+}
+
+.white-bcg{
+	background:rgba(255,255,255, 0.5);
+}

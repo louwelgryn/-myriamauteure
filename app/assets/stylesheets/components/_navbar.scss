@@ -1,13 +1,14 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
-  padding: 30px 0;
+  background: rgba(255,255,255,0.5);
   letter-spacing: 0.3em;
   font-size: 14px;
   font-family: "europa", sans-serif;
   font-weight: 700;
-  margin-right: 10px;
-  margin-left: 10px;
+      position: absolute;
+    top: 23px;
+    width: 100%;
+    padding: 0 0;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -19,12 +20,12 @@
 }
 
 .hover:hover {
-  color: red;
-  border-color: red;
+  color: white;
+  border-color: #c30101;
 }
 
 .red-square{
- border: 1px solid #222;
+ 
 }
 
 .nav-padding {
@@ -33,23 +34,42 @@ margin-left: 1rem;
 
 }
 
+
 #nav-accueil{
   margin-left: 4rem;
+  color: #c30101;
+  font-size: 25px;
+}
+
+#nav-bio {
+  color: white;
+}
+
+#nav-accueil:hover{
+  margin-left: 4rem;
+  color: white;
 }
 
 .nav-color {
-  color: #d85e43;
+  color: white;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #222;
+  color: white;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #d1453c;
+  color: #c30101;
 }
+
 #nav-contact{
-  color: #d1453c;
+  color: white;
   margin-right: 4rem;
 }
+
+#nav-contact:hover{
+  color: #c30101;
+  margin-right: 4rem;
+}
+
 
 

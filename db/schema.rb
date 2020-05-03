@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_06_104406) do
+ActiveRecord::Schema.define(version: 2020_05_03_215825) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2019_10_06_104406) do
     t.integer "year"
     t.string "edition_house"
     t.string "tags", default: [], array: true
+    t.text "extract"
   end
 
   create_table "critics", force: :cascade do |t|
@@ -34,6 +35,7 @@ ActiveRecord::Schema.define(version: 2019_10_06_104406) do
     t.bigint "book_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "link"
     t.index ["book_id"], name: "index_critics_on_book_id"
   end
 

@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   end
   root 'pages#homepage'
   get 'tweets', to: 'pages#tweets', as: :tweets
+  get 'bio', to: 'pages#bio', as: :bio
+  get 'dessin', to: 'pages#dessin', as: :dessin
   resources :home, only: [:index, :new, :create]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

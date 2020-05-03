@@ -1,35 +1,49 @@
 
-
-
-<div class="banner-two project-banner" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://res.cloudinary.com/duro4nxuo/image/upload/v1571593855/Myriam%20Cohen%20Welgryn/raphael-schaller-GkinCd2enIY-unsplash_zy9h9f.jpg'); ">
-  <div class="container">
-    <div class="title-show">
-
-      <div class="title-details">
-        <h2><%= @book.title %> (<%= @book.year %>)</h2>
-        <p><%= @book.edition_house %></p>
-        <a class="btn btn-suedois-rouge" href="<%= @book.link %>" target="_blank">COMMANDER</a>
+<div class="banner-four" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://res.cloudinary.com/duro4nxuo/image/upload/v1571593855/Myriam%20Cohen%20Welgryn/raphael-schaller-GkinCd2enIY-unsplash_zy9h9f.jpg'); ">
+<%= render 'navbar/navbar' %>
+  <div class='book-details'>
+    <div class=" book white-background">
+      <div class="title-show title-details flex">
+          <h3 class='book-title'><strong><%= @book.title %> </strong></h3>
+          <a class="btn btn-suedois-rouge" href="<%= @book.link %>" target="_blank">ACHETER CE LIVRE</a>
+      </div>
+      <div class="title-details justify">
+        <h6 class='justify'><%= @book.resume %> </h6>
+        <br>
+        <h5 class='red' style='color:white'><strong>CRITIQUES :</strong></h5>
+        <div>
+          <% @critic.each do |critic| %>
+          <h6 class='italique'>" <%= critic.comment %>" 
+          <%  if critic.link.nil? %>
+          <%= critic.author %>, <%= critic.media %> </a></h6>
+          <%  else %>
+          <a class= 'link-red' href="<%= critic.link %>"> <%= critic.author %>, <%= critic.media %></a> </h6>
+          <% end %>
+          <% end %>
+        </div>
+        <br>
+        <br> 
+      </div>
+  </div> 
+  <div class="book">
+    <div class="container project-view-container">
+      <div>
+        <div class='book-image' > <%= image_tag @book.image %> </div>
       </div>
     </div>
   </div>
 </div>
-
-
-<div class="container project-view-container">
-  <div class="project-view-charity">
-   <div class="image"> <%= image_tag @book.image, height: 600, width: 350 %> </div>
+</div>
+<div class="banner-three" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://res.cloudinary.com/duro4nxuo/image/upload/v1571593855/Myriam%20Cohen%20Welgryn/raphael-schaller-GkinCd2enIY-unsplash_zy9h9f.jpg'); ">
+<div class= 'white-background extract border-red container'>
+    <h5 class='red ' style='color:white'><strong>EXTRAIT :</strong></h5>
+    <h8 class='justify extract'>"<%= @book.extract %>" </h8>
   </div>
 
+ 
 
 
-<h6><%= @book.resume %> </h6>
-<br>
-<br>
-<% @book.tags.each do |tag| %>
-<h4>  <%= tag %> </h4>
-<% end %>
 
-</div>
 
 
 

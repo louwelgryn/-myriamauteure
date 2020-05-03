@@ -1,7 +1,7 @@
 .btn-flat {
   color: white;
   padding: 8px 24px;
-  border-radius: 4px;
+  border-radius: 10px;
   background: #d12630;
   transition: background 0.3s ease;
 }
@@ -38,12 +38,13 @@
     letter-spacing: 0.1em;
     font-weight: 700;
     padding: 12px 18px;
-    border: 2px solid #d1453c;
-    background: #d1453c;
+    border: 2px solid #c30101;
+    background: #c30101;
     display: inline-block;
     text-align: center;
     line-height: normal;
     vertical-align: top;
+    border-radius: 10px;
     color:white;
 }
 

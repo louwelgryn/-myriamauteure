@@ -1,12 +1,19 @@
 
 
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/duro4nxuo/image/upload/v1571593855/Myriam%20Cohen%20Welgryn/raphael-schaller-GkinCd2enIY-unsplash_zy9h9f.jpg);">
-  <div class="container">
-    <div class="project-view-charity" id="image-homepage">
-   <div class="image"> <%= image_tag 'Image_maman.jpg', height: 400, width: 300 %> </div>
+<div class="banner-two" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/duro4nxuo/image/upload/v1571593855/Myriam%20Cohen%20Welgryn/raphael-schaller-GkinCd2enIY-unsplash_zy9h9f.jpg);">
+	<%= render 'navbar/navbar' %>
+  <div class="container title-show">
+  	<div class= 'flex-child'>
+		<h1>Livres de Myriam Cohen-Welgryn </h1>
+    	<p> Essais, romans et dessins</p>
+   		<br>
+   		<br>
+    	<h3 style='color:white'>Bienvenue sur ce site qui range dans de petites cases les quelques écrits ou dessins que j’ai commis </h3>
+    	<h3 style='color:white'>et qui les rend plus accessibles...</h3>
+    </div>
+    <div class="project-view-charity flex-child" id='image-homepage'>
+   		<div class="image"> <%= image_tag 'Image_maman.jpg', height: 500, width: 350 %> </div>
+  	</div>
   </div>
-<h1>Découvrez les oeuvres littéraires de Myriam Cohen Welgryn </h1>
-    <p> Trois livres, trois voyages</p>
-   <a class="btn btn-flat" href="https://www.amazon.fr/l/B00DDD7UMC?_encoding=UTF8&qid=1570292408&redirectedFromKindleDbs=true&ref=sr_ntt_srch_lnk_1&rfkd=1&shoppingPortalEnabled=true&sr=1-1" target="_blank">Acheter un livre</a>
-  </div>
+
 </div>

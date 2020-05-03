@@ -1,7 +1,10 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://res.cloudinary.com/duro4nxuo/image/upload/v1571593855/Myriam%20Cohen%20Welgryn/raphael-schaller-GkinCd2enIY-unsplash_zy9h9f.jpg'); ">
+<%= render 'navbar/navbar' %>
+
 <%= form_for @contact, url: home_index_path, remote: true do |f| %>
     <div class="container-form">
 
-      <div class="contact-form">
+      <div class="contact-form white-letters">
         <div class="col-md-6">
           <%= f.label "Nom" %></br>
           <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
@@ -27,4 +30,5 @@
   <div class="col-md-6" id="flash-message">
     <%= render 'flash' %>
   </div>
+</div>
 
