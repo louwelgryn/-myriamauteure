@@ -81,6 +81,10 @@ object-fit: cover
 	color: #c30101;
 }
 
+.flex-child {
+	flex: 50%;
+}
+
 .extract {
 	padding: 20px;
 	position: relative;
@@ -91,7 +95,7 @@ object-fit: cover
 }
 
 .white-bcg{
-	background:rgba(255,255,255, 0.5);
+	background:rgba(210,210,210, 1);
 }
 
 .center {
@@ -121,11 +125,23 @@ object-fit: cover
     #secondary { width:30%; margin-left:3%;}  
 }
 
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
+@media (max-width: 800px) {
+
+  .book-details {
+
+	flex-direction: column;
+
+    }
+
+    .title-show {
+
+	flex-direction: column;
+
+    }
+
+  }
+
+
 
 img { max-width: 100%; height: auto; }
 
