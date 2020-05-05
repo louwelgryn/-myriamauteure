@@ -1,0 +1,5 @@
+meta_product_name: "Myriam Cohen Welgryn Auteure"
+meta_title: "Myriam Cohen Welgryn Auteure - Découvrez ses livres et ses dessins"
+meta_description: "Essais, romans et dessins"
+meta_image: "dessin-bio.png" # should exist in `app/assets/images/`
+twitter_account: "@MyriamCWAuteure"   # required for Twitter Cards
