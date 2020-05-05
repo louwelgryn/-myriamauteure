@@ -65,9 +65,9 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 587,
-    domain:               'gmail.com',
-    user_name:            ENV["GMAIL_EMAIL"],
-    password:             ENV["GMAIL_PASSWORD"],
+    domain:               'gmail',
+    user_name:            'myriamcohenwelgrynauteure@gmail.com',
+    password:             'Mjlydle1!',
     authentication:       "plain",
     enable_starttls_auto: true  }
 end

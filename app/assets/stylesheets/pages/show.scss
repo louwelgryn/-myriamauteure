@@ -95,7 +95,7 @@ object-fit: cover
 }
 
 .white-bcg{
-	background:rgba(210,210,210, 1);
+	background:rgba(255,255,255, 1);
 }
 
 .center {
@@ -130,13 +130,25 @@ object-fit: cover
   .book-details {
 
 	flex-direction: column;
+	text-align: center;
+	margin-right: 7%;
 
     }
 
     .title-show {
 
 	flex-direction: column;
+	text-align: center;
+	margin-right: 7%;
+    }
 
+    .margin {
+    margin-right: 7%;
+    }
+
+    .form-test {
+    margin-right: 15%;
+    margin-right: 15%;
     }
 
   }
